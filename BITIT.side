@@ -1,0 +1,108 @@
+{
+  "id": "37ccd68a-e170-49d8-a32d-2bc298116ab1",
+  "version": "2.0",
+  "name": "BITIT",
+  "url": "http://automationpractice.com",
+  "tests": [{
+    "id": "36f46ed8-4bf6-4625-88f7-a7c9849cb34d",
+    "name": "Test1",
+    "commands": [{
+      "id": "26b75d4a-e332-408c-9644-85597c2892ef",
+      "comment": "",
+      "command": "open",
+      "target": "/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19d87c10-de54-46f5-a4b2-5b2141a4db5f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1142x690",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "259b4d6b-0cc5-447c-a00d-a8130c1dbcec",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_query_top",
+      "targets": [
+        ["id=search_query_top", "id"],
+        ["name=search_query", "name"],
+        ["css=#search_query_top", "css:finder"],
+        ["xpath=//input[@id='search_query_top']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "377fb72c-0155-462d-a9a6-533b4dd6a57d",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_query_top",
+      "targets": [
+        ["id=search_query_top", "id"],
+        ["name=search_query", "name"],
+        ["css=#search_query_top", "css:finder"],
+        ["xpath=//input[@id='search_query_top']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Mobiles"
+    }, {
+      "id": "7fabc2cb-6d53-442c-8645-9484f9fcb688",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=search_query_top",
+      "targets": [
+        ["id=search_query_top", "id"],
+        ["name=search_query", "name"],
+        ["css=#search_query_top", "css:finder"],
+        ["xpath=//input[@id='search_query_top']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "c15429cf-e321-410f-a430-a9c72391bac2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='center_column']/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'No results were found for your search \"Mobiles\"')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "727e7d1c-19ae-466d-87af-5c6daef34195",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='center_column']/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'No results were found for your search \"Mobiles\"')]", "xpath:innerText"]
+      ],
+      "value": "No results were found for your search \"Mobiles\""
+    }, {
+      "id": "0f3d0817-6ed0-4e80-9bff-d287a87d6a3b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "08ad117d-61fe-4c9e-8656-a9f5e3349f76",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["36f46ed8-4bf6-4625-88f7-a7c9849cb34d"]
+  }],
+  "urls": ["http://automationpractice.com/"],
+  "plugins": []
+}
